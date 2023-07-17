@@ -1,0 +1,15 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_type/button_type_radio.css);
+@import url(../blocks/button/_type/button_type_submit.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_active/popup_active.css);
+@import url(../blocks/popup/__content/popup__content.css);
+@import url(../blocks/circle/circle.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__text/popup__text.css);
+@import url(../blocks/form/__content/form__content.css);
+@import url(../blocks/form/__item/form__item.css);

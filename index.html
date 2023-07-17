@@ -12,36 +12,41 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="root">
   <main class="content">
-    <div class="popup">
-      <form action="" class="form" name="rateForm">
-        <h2 class="form__title">How did we do?</h2>
-        <p class="form__text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-        <fieldset class="form__content">
-          <label for="one" class="form__label">
-            <input type="radio" id="one" name="starRate" class="form__item" value="1">
-            <span class="form__pseudo-item"></span>
-          </label>
-          <label for="two" class="form__label">
-            <input type="radio" id="two" name="starRate" class="form__item" value="2">
-            <span class="form__pseudo-item"></span>
-          </label>
-          <label for="three" class="form__label">
-            <input type="radio" id="three" name="starRate" class="form__item" value="3">
-            <span class="form__pseudo-item"></span>
-          </label>
-          <label for="four" class="form__label">
-            <input type="radio" id="four" name="starRate" class="form__item" value="4">
-            <span class="form__pseudo-item"></span>
-          </label>
-          <label for="five" class="form__label">
-            <input type="radio" id="five" name="starRate" class="form__item" value="5">
-            <span class="form__pseudo-item"></span>
-          </label>
-          <button type="submit" class="button" name="submit">Submit</button>
-        </fieldset>
-      </form>
+    <div class="popup popup_active">
+      <div class="popup__content">
+        <form action="" class="form" name="rateForm">
+          <div class="circle">
+            <img src="./images/icon-star.svg" alt="" class="form__image">
+          </div>
+          <h2 class="popup__title">How did we do?</h2>
+          <p class="popup__text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <fieldset class="form__content">
+            <label for="one" class="form__label">
+              <input type="radio" id="one" name="starRate" class="form__item" value="1">
+              <div class="form__pseudo-item circle button button_type_radio">1</div>
+            </label>
+            <label for="two" class="form__label">
+              <input type="radio" id="two" name="starRate" class="form__item" value="2">
+              <div class="form__pseudo-item circle button button_type_radio">2</div>
+            </label>
+            <label for="three" class="form__label">
+              <input type="radio" id="three" name="starRate" class="form__item" value="3">
+              <div class="form__pseudo-item circle button button_type_radio">3</div>
+            </label>
+            <label for="four" class="form__label">
+              <input type="radio" id="four" name="starRate" class="form__item" value="4">
+              <div class="form__pseudo-item circle button button_type_radio">4</div>
+            </label>
+            <label for="five" class="form__label">
+              <input type="radio" id="five" name="starRate" class="form__item" value="5">
+              <div class="form__pseudo-item circle button button_type_radio">5</div>
+            </label>
+          </fieldset>
+          <button type="submit" class="button button_type_submit" name="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </main>
   <!-- Rating state end -->
