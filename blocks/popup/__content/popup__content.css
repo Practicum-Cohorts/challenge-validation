@@ -1,7 +1,7 @@
 .popup__content {
   color: white;
   max-width: 500px;
-  min-width: calc(320px - 10%);
+  min-width: calc(375px - 10%);
   width: 90%;
   height: 520px;
   background-color: hsl(220, 17%, 14%);
