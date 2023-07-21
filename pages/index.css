@@ -14,12 +14,12 @@
 @import url(../blocks/circle/circle.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__text/popup__text.css);
-@import url(../blocks/popup/__image/popup__image.css);
 
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__content/form__content.css);
 @import url(../blocks/form/__item/form__item.css);
 
 @import url(../blocks/message/message.css);
+@import url(../blocks/message/__image/message__image.css);
 @import url(../blocks/message/__result/message__result.css);
 @import url(../blocks/message/__text/message__text.css);

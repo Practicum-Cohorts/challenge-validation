@@ -12,7 +12,7 @@ function handleRateFormSubmit(e) {
   const string = `You selected ${starRate.value} out of 5`;
 
   toggleModals();
-  document.querySelector('.message .popup__text').textContent = string
+  document.querySelector('.message__result').textContent = string
 }
 
 form.addEventListener('submit', handleRateFormSubmit)
