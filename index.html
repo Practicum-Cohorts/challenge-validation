@@ -1,49 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://github.com/HoracioGutierrez" target="_blank">Horacio Gutierrez</a>. 
-    Coded by <a href="#">Frontend Mentor and Horacio Gutierrez</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive rating component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="root">
+    <main class="content">
+      <div class="popup popup_active">
+        <div class="popup__content">
+          <form action="" class="form" name="rateForm">
+            <div class="circle">
+              <img src="./images/icon-star.svg" alt="estrella" class="form__image" />
+            </div>
+            <h2 class="popup__title">How did we do?</h2>
+            <p class="popup__text">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+            <fieldset class="form__content">
+              <label for="one" class="form__label">
+                <input
+                  type="radio"
+                  id="one"
+                  name="starRate"
+                  class="form__item"
+                  value="1"
+                />
+                <div class="form__pseudo-item circle button button_type_radio">
+                  1
+                </div>
+              </label>
+              <label for="two" class="form__label">
+                <input
+                  type="radio"
+                  id="two"
+                  name="starRate"
+                  class="form__item"
+                  value="2"
+                />
+                <div class="form__pseudo-item circle button button_type_radio">
+                  2
+                </div>
+              </label>
+              <label for="three" class="form__label">
+                <input
+                  type="radio"
+                  id="three"
+                  name="starRate"
+                  class="form__item"
+                  value="3"
+                />
+                <div class="form__pseudo-item circle button button_type_radio">
+                  3
+                </div>
+              </label>
+              <label for="four" class="form__label">
+                <input
+                  type="radio"
+                  id="four"
+                  name="starRate"
+                  class="form__item"
+                  value="4"
+                />
+                <div class="form__pseudo-item circle button button_type_radio">
+                  4
+                </div>
+              </label>
+              <label for="five" class="form__label">
+                <input
+                  type="radio"
+                  id="five"
+                  name="starRate"
+                  class="form__item"
+                  value="5"
+                />
+                <div class="form__pseudo-item circle button button_type_radio">
+                  5
+                </div>
+              </label>
+            </fieldset>
+            <button
+              type="submit"
+              class="button button_type_submit"
+              name="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="popup">
+        <div class="popup__content">
+          <div class="message">
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt="imagen de agradecimiento"
+              class="message__image"
+            />
+            <div class="popup__text message__result"></div>
+            <h2 class="popup__title">Thank you!</h2>
+            <p class="popup__text message__text">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don't hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://github.com/HoracioGutierrez" target="_blank"
+        >Horacio Gutierrez</a
+      >. Coded by <a href="#">Frontend Mentor and Horacio Gutierrez</a>.
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,10 @@
+.content {
+  font-family: 'Overpass', sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 375px;
+  max-height: 1050px;
+  height: 100%;
+  background-color: hsl(216, 12%, 8%);
+  margin: 0;
+}

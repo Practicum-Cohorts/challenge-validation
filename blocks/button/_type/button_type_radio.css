@@ -1,0 +1,11 @@
+.button_type_radio {
+  transition: background-color 200ms ease-in-out;
+}
+
+.form__item[type="radio"]:checked + .button_type_radio {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.button_type_radio:hover {
+  background-color: hsl(25, 97%, 53%);
+}

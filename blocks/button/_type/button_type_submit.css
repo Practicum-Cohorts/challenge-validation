@@ -1,0 +1,11 @@
+.button_type_submit {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  height: 50px;
+  transition: all 200ms ease-in-out;
+}
+
+.button_type_submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
